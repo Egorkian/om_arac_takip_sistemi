@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_bilgiler_tree" model="ir.ui.view">
+        <field name="name">araclarin.bilgileri.tree</field>
+        <field name="model">araclarin.bilgileri</field>
+        <field name="arch" type="xml">
+
+            <tree>
+
+                <field name="marka"/>
+                <field name="model"/>
+                <field name="renk"/>
+                <field name="kapi_sayisi"/>
+                <field name="beygir"/>
+                <field name="kilometre"/>
+                <field name="fiyat"/>
+
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="action_bilgiler_tree" model="ir.actions.act_window">
+        <field name="name">Bilgiler</field>
+        <field name="res_model">araclarin.bilgileri</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem id="menu_bilgiler"
+              name="Bilgiler"
+              parent="menu_arac_master"
+              sequence="10"/>
+    <menuitem id="menu_bilgiler_list"
+              name="Bilgeler"
+              parent="menu_bilgiler"
+              action="action_bilgiler_tree"/>
+
+</odoo>
+
+
+
+

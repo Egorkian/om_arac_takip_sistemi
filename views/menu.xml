@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="menu_arac_root"
+              name="Arac Takip Uygulama"
+              sequence="0"/>
+    <menuitem id="menu_arac_master"
+              name="Arac Takip Uygulama"
+              parent="menu_arac_root"
+              sequence="0"/>
+</odoo>

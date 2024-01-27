@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+om_arac_takip_sistemi.access_araclarin_bilgileri,access_araclarin_bilgileri,om_arac_takip_sistemi.model_araclarin_bilgileri,base.group_user,1,1,1,1
+om_arac_takip_sistemi.access_kayitsofor_bilgisi,access_kayitsofor_bilgisi,om_arac_takip_sistemi.model_kayitsofor_bilgisi,base.group_user,1,1,1,1
+om_arac_takip_sistemi.access_bilgiler_goster,access_bilgiler_goster,om_arac_takip_sistemi.model_bilgiler_goster,base.group_user,1,1,1,1
+om_arac_takip_sistemi.access_sonsecim,access_sonsecim,om_arac_takip_sistemi.model_sonsecim,base.group_user,1,1,1,1

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_araba_uygu_form" model="ir.ui.view">
+        <field name="name">araclarin.bilgileri.form</field>
+        <field name="model">araclarin.bilgileri</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="marka"/>
+                        <field name="model"/>
+                        <field name="renk"/>
+                        <field name="kapi_sayisi"/>
+                        <field name="beygir"/>
+                        <field name="kilometre"/>
+                        <field name="fiyat"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="action_uygulama_bilgi" model="ir.actions.act_window">
+        <field name="name">AracBilgi</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">araclarin.bilgileri</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Olustur
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_arac"
+              name="Arac Kayıt"
+              action="action_uygulama_bilgi"
+              parent="menu_arac_master"
+              sequence="0"/>
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_sonsecim_tree" model="ir.ui.view">
+        <field name="name">sonsecim.tree</field>
+        <field name="model">sonsecim</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="zaman_time"/>
+                <field name="tarih_date"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_sonsecim_bilgi" model="ir.actions.act_window">
+        <field name="name">SoforSecim</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sonsecim</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                SoforSecim
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_sofor_secim"
+              name="Sofor Secim"
+              action="action_sonsecim_bilgi"
+              parent="menu_arac_master"
+              sequence="0"/>
+</odoo>
